@@ -125,6 +125,10 @@ background: radial-gradient(circle, rgba(255,231,254,1) 0%, rgba(249,215,255,1) 
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.hora2{
+  justify-content: center;
+display: grid;
+}
 @media (min-width: 1000px) {
 .titulos{
  margin-top: 50px; 
@@ -138,7 +142,17 @@ background: radial-gradient(circle, rgba(255,231,254,1) 0%, rgba(249,215,255,1) 
 }
 .hora1{
   font-size: 2.5vh;
+  
 }
+.wasa{
+  margin-bottom: 40px;
+}
+.horat{
+  display: grid;
+margin-left: 30%;
+justify-content: left;
+}
+
 .texto{
   margin-left: 100px;
 margin-right: 100px;
@@ -152,6 +166,15 @@ margin-right: 100px;
   font-size: 2.5vh;
   
 
+}
+.hora1{
+  font-size: 2.5vh;
+}
+.horat{
+  font-size: 2.5vh;
+  justify-content: flex-start;
+  display: grid;
+  margin-left: 5%;
 }
 .wasa{
   margin-bottom: 20px;
@@ -259,7 +282,7 @@ margin-right: 100px;
   
   <!-- acordeon -->
   <div class="accordion" id="accordionExample">
-    <div class="card">
+    <!-- <div class="card">
       <div class="card-header" id="headingOne">
         <h2 class="mb-0 text-center">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -283,9 +306,9 @@ margin-right: 100px;
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
-   
+    
   <!-- La que va -->
       <div class="card">
         <div class="card-header" id="headingTwo">
@@ -310,8 +333,14 @@ margin-right: 100px;
                 <h3 class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec diam eget dolor tristique blandit id et risus. Duis a nibh eget nunc rhoncus vulputate. Nullam vitae quam ac nulla vestibulum vulputate. Donec in lacus vel risus gravida faucibus. Donec non fermentum velit.</h3>
                 <br><br><br>
                 <h2 class="hora">Horarios de atención:</h2> 
-                <h3 class="hora1">Lunes a Viernes de 9:30hs a 13hs y de 18hs a 22hs</h3>
-                <h3 class="hora1">Sábados de 10:30hs a 13hs y de 18hs a 22hs</h3>
+                <h3 class="horat">Lunes a Viernes:</h3> 
+                <ul class="hora2">
+                  <li class="hora1">9:30hs a 13hs</li>
+                <li class="hora1">18hs a 22hs</li></ul> 
+                <h3 class="horat">Sábados:</h3>
+                <ul class="hora2">
+                  <li class="hora1">10:30hs a 13hs</li>
+                <li class="hora1">18hs a 22hs</li></ul> 
                 <br><br>
                 <div class="wasa">
                 <a href="https://wa.me/+5491165621414" target="_blank" class="card-link"><i class="fab fa-whatsapp" style="scale:2.5;margin-right: 3vh;"></i></a>
