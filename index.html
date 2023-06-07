@@ -6,12 +6,21 @@
   <title>Calistense</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
  
   <style>
     /* Estilos adicionales personalizados */
+    *{
+      font-family: 'PT Serif', serif;
+      
+    }
     body {
       padding-top: 50px;
+      /* background: rgb(255,231,254);
+background: radial-gradient(circle, rgba(255,231,254,1) 0%, rgba(249,215,255,1) 100%, rgba(251,146,254,1) 100%);  */
     }
     .jumbotron {
       background-color: #f8f9fa;
@@ -21,7 +30,8 @@
       padding: 50px 0;
     }
     .navbar {
-      background-color: #000;
+      background: rgb(235,0,222);
+      background: radial-gradient(circle, rgba(235,0,222,1) 0%, rgba(84,35,103,1) 100%, rgba(60,0,87,1) 100%); 
       color: #fff;
       width: 100%;
 
@@ -86,7 +96,73 @@
   font-weight: bold;
   margin-left: 5px;
 }
+.hora{
+  font-weight: bold;
+}
+.nav-link{
+  font-size: 2.2vh;
+  margin-top: 5px;
+}
 
+#varti {
+  
+  font-size: 2.2vh;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+#prin{
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1000px) {
+.titulos{
+ margin-top: 50px; 
+ font-weight: 600;
+ font-family: 'PT Serif', serif;
+ font-style: italic;
+}
+.hora{
+  text-align: left;
+  margin-left: 15vh;
+}
+.hora1{
+  font-size: 2.5vh;
+}
+.texto{
+  margin-left: 100px;
+margin-right: 100px;
+}
+}
+@media (max-width: 999px) {
+.titulos{
+  font-size: 4.5vh; 
+}
+.texto{
+  font-size: 2.5vh;
+  
+
+}
+.wasa{
+  margin-bottom: 20px;
+}
+.nav-link{
+  font-size: 3.2vh;
+  margin-top: 5px;
+}
+#Con{
+  margin-bottom: 88vh;
+}}
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 768px) {
   .flechas {
@@ -96,12 +172,13 @@
     width: 30%;
   margin:auto ;
 }
+
 }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" id="varti" href="#">
       <i class="fas fa-code icon"></i>
       Calistense
     </a>
@@ -109,7 +186,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Inicio</a>
@@ -121,7 +198,7 @@
           <a class="nav-link" href="#">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" id="Con" href="#">Contacto</a>
         </li>
       </ul>
     </div>
@@ -133,7 +210,8 @@
   
   <!-- Sección de inicio -->
   <div class="jumbotron text-center">
-    <h1 class="display-4 custom-title">Bienvenido a CALISTENSE PAPAAA</h1>
+    
+    <h1 class="display-4 custom-title" id="prin">Bienvenido a CALISTENSE PAPAAA</h1>
     <p class="lead">Aquí encontrarás información sobre nosotros</p>
   </div>
   
@@ -171,7 +249,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <a href="https://www.instagram.com/alentoledo/" target="_blank" class="footer-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/calistense" target="_blank" class="footer-icon"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/+5491165621414" target="_blank" class="footer-icon"><i class="fab fa-whatsapp"></i></a>
           <a href="https://goo.gl/maps/zbQKW8131dARA6NM7" target="_blank" class="footer-icon"><i class="fab fa-google"></i></a>
         </div>
@@ -185,32 +263,66 @@
       <div class="card-header" id="headingOne">
         <h2 class="mb-0 text-center">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <span class="accordion-title">Título 1</span><span class="accordion-icon">+</span>
+            <span class="accordion-title">Profe Ale</span><span class="accordion-icon">+</span>
           </button>
         </h2>
       </div>
   
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Texto 1
+       
+          <div class="col-md-3">
+            <div class="card h-100">
+              <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
+              <div class="card-body">
+                <h5 class="card-title" >Alexis Toledo</h5>
+                <p class="card-text">Épico profe</p>
+                <p class="card-text">Horarios de atención: Lunes a Viernes de 9:30 a 13 y de 18 a 22</p>
+                <p class="card-text">Sábados de 10:30 a 13 y de 18 a 22</p>
+                <a href="https://wa.me/+5491165621414" target="_blank" class="card-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/alentoledo/" target="_blank" class="card-link"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0 text-center">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <span class="accordion-title">Título 2</span><span class="accordion-icon">+</span>
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          Texto 2
+   
+  <!-- La que va -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0 text-center">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span class="accordion-title">Profe Ale</span><span class="accordion-icon">+</span>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row text-center justify-content-center border">
+              <div class="col-md-3 d-none d-md-block">
+                <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
+              </div>
+              <div class="col-12 d-md-none">
+                <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
+              </div>
+              <div class="col-12 col-md-7">
+                <h1 class="titulos" >Alexis Toledo</h1>
+                <br>
+                <h3 class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec diam eget dolor tristique blandit id et risus. Duis a nibh eget nunc rhoncus vulputate. Nullam vitae quam ac nulla vestibulum vulputate. Donec in lacus vel risus gravida faucibus. Donec non fermentum velit.</h3>
+                <br><br><br>
+                <h2 class="hora">Horarios de atención:</h2> 
+                <h3 class="hora1">Lunes a Viernes de 9:30hs a 13hs y de 18hs a 22hs</h3>
+                <h3 class="hora1">Sábados de 10:30hs a 13hs y de 18hs a 22hs</h3>
+                <br><br>
+                <div class="wasa">
+                <a href="https://wa.me/+5491165621414" target="_blank" class="card-link"><i class="fab fa-whatsapp" style="scale:2.5;margin-right: 3vh;"></i></a>
+                <a href="https://www.instagram.com/alentoledo/" target="_blank" class="card-link"><i class="fab fa-instagram" style="scale:2.5;margin-left: 3vh;""></i></a>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      
   
     <div class="card">
       <div class="card-header" id="headingThree">
@@ -256,17 +368,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="imagen2.jpg" class="card-img-top" alt="Imagen 2">
-        <div class="card-body">
-          <h5 class="card-title">Alexis Toledo</h5>
-          <p class="card-text">Épico profe</p>
-          <a href="#" class="card-link"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="card-link"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
+   
     <div class="col-md-3">
       <div class="card h-100">
         <img src="imagen3.jpg" class="card-img-top" alt="Imagen 3">
@@ -334,28 +436,32 @@ accordionButtons.forEach(function(button) {
 </script>
 <script>
   var navbarToggler = document.getElementById('navbarToggler');
-var navbarCollapse = document.getElementById('navbarSupportedContent');
+  var navbarCollapse = document.getElementById('navbarSupportedContent');
+  var mediaQuery = window.matchMedia('(min-width: 991px)');
 
-navbarToggler.addEventListener('click', function() {
-  if (window.innerWidth <= 991) {
-    if (navbarCollapse.classList.contains('show')) {
-      navbarCollapse.classList.remove('show');
-      navbarToggler.setAttribute('aria-expanded', 'false');
-    } else {
-      navbarCollapse.classList.add('show');
-      navbarToggler.setAttribute('aria-expanded', 'true');
+  function toggleNavbar() {
+    if (mediaQuery.matches) {
+      if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      } else {
+        navbarCollapse.classList.add('show');
+        navbarToggler.setAttribute('aria-expanded', 'true');
+      }
     }
   }
-});
 
-document.addEventListener('click', function(event) {
-  var targetElement = event.target;
-  if (window.innerWidth <= 991 && !targetElement.classList.contains('navbar-toggler') && !targetElement.classList.contains('navbar-collapse')) {
-    navbarCollapse.classList.remove('show');
-    navbarToggler.setAttribute('aria-expanded', 'false');
-  }
-});
+  navbarToggler.addEventListener('click', toggleNavbar);
+
+  document.addEventListener('click', function(event) {
+    var targetElement = event.target;
+    if (mediaQuery.matches && !targetElement.classList.contains('navbar-toggler') && !targetElement.classList.contains('navbar-collapse')) {
+      navbarCollapse.classList.remove('show');
+      navbarToggler.setAttribute('aria-expanded', 'false');
+    }
+  });
 </script>
+
 
   <!-- Sección de quienes somos -->
   <section class="quienes-somos">
